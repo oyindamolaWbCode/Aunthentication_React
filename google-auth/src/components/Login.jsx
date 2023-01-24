@@ -20,6 +20,10 @@ const Login = () => {
   //     {theme: "outline", size: "large"}
   //   );
   // }, []);
+
+  const google = () =>{
+    window.open("http://localhost:5000/auth/google", "_self")
+  }
   return (
        <div className="Login p-10">
       <h2 className="">Join Today</h2>
@@ -64,7 +68,7 @@ const Login = () => {
         <p className="line">Or</p>
       </div>
       <div className="signIn-Button gap-4 p-2">
-        <button
+        <button onClick={google}
           className="text-white bg-secondary p-3 w-full font-medium rounded-3 
         border-0 align-middle gap-2 google"
         >
