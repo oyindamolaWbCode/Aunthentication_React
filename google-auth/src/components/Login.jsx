@@ -4,23 +4,6 @@ import { AiFillFacebook } from "react-icons/ai";
 
 const Login = () => {
 
-  // function handleCallbackResponse(response){
-  //   console.log("Encoded JWT ID token: " + response.credential);
-  // }
-
-  // useEffect(() => {
-  //   // global google
-  //   google.accounts.id.initialize({
-  //     client_id: "494694620352-2hk4sab1vqtfds2m2nqu8t6hb9mm94jr.apps.googleusercontent.com",
-  //     callback: handleCallbackResponse
-  //   });
-
-  //   google.accounts.id.renderButton(
-  //     document.getElementsByClassName("google2"),
-  //     {theme: "outline", size: "large"}
-  //   );
-  // }, []);
-
   const google = () =>{
     window.open("http://localhost:5000/auth/google", "_self")
   }
